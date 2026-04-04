@@ -1,7 +1,7 @@
-# Enzo Blog
+# Discover Moz
 
 A full-stack blog application built with Python and Django, 
-showcasing content about Mozambique — its cities, beaches, and culture.
+showcasing content about Mozambique, its cities, beaches, cuisine, and culture.
 
 Built as a learning project during my Bachelor of Business studies, 
 this application demonstrates real-world web development practices 
