@@ -52,8 +52,8 @@ Project-Blog/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/enzo-blog.git
-cd enzo-blog
+git clone https://github.com/enzozacarias03-droid/Discover-Moz.git
+cd Discover-Moz
 ```
 
 2. Create your environment file:
