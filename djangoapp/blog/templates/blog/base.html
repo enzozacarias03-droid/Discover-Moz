@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  {% include 'blog/partials/_head.html' %}
+  {% block additional_head %}{% endblock additional_head %}
+</head>
+<body>
+  <div class="blog-wrapper">
+    {% include 'blog/partials/_header.html' %}
+
+    {% block content %}{% endblock content %}
+    
+    {% include 'blog/partials/_pagination.html' %}
+    
+    {% include 'blog/partials/_footer.html' %}
+  </div>
+</body>
+</html>
