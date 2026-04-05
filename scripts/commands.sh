@@ -1,7 +1,7 @@
 #!/bin/sh
+#Shell will terminate the execution of a script
+#when a command fails
 
-#O shell ira encerrar a execucao do script quando um
-#comando falhar
 
 set -e
 
@@ -10,4 +10,5 @@ set -e
 /scripts/collectstatic.sh
 /scripts/makemigrations.sh
 /scripts/migrate.sh
+python manage.py createsuperuser --noinput || true
 /scripts/runserver.sh
