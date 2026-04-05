@@ -216,9 +216,6 @@ CLOUDINARY_STORAGE = {
 if not DEBUG:
     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-# WhiteNoise, serves static files efficiently in production
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
-
 # Trusted domains for CSRF protection
 CSRF_TRUSTED_ORIGINS = [
     'https://discover-moz-production.up.railway.app',
