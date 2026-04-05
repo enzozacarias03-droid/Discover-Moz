@@ -220,7 +220,3 @@ STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'
 CSRF_TRUSTED_ORIGINS = [
     'https://discover-moz-production.up.railway.app',
 ]
-
-STATICFILES_DIRS = [
-    BASE_DIR / 'blog' / 'static',
-]
