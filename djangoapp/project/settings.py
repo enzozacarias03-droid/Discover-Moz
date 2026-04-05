@@ -205,7 +205,7 @@ AXES_FAILURE_LIMIT = 3  # Limit of wrong password
 AXES_COOLOFF_TIME = 1  # Resetting the failure limit after 1h
 AXES_RESET_ON_SUCCESS = True  # If a person logs in once, it resets
 
-# Cloudinary - handles uploaded media files in production
+# Cloudinary, handles uploaded media files in production
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.getenv('CLOUDINARY_CLOUD_NAME', ''),
     'API_KEY': os.getenv('CLOUDINARY_API_KEY', ''),
@@ -216,5 +216,10 @@ CLOUDINARY_STORAGE = {
 if not DEBUG:
     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-# WhiteNoise - serves static files efficiently in production
+# WhiteNoise, serves static files efficiently in production
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Trusted domains for CSRF protection
+CSRF_TRUSTED_ORIGINS = [
+    'https://discover-moz-production.up.railway.app',
+]
