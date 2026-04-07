@@ -155,7 +155,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = '/tmp/staticfiles'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = DATA_DIR / 'media'
@@ -215,7 +215,7 @@ if not DEBUG:
     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATICFILES_DIRS = [BASE_DIR / 'blog' / 'static']
+
 
 # Trusted domains for CSRF protection
 CSRF_TRUSTED_ORIGINS = [
