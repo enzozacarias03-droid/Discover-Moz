@@ -214,7 +214,8 @@ CLOUDINARY_STORAGE = {
 if not DEBUG:
     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_DIRS = [BASE_DIR / 'blog' / 'static']
 
 # Trusted domains for CSRF protection
 CSRF_TRUSTED_ORIGINS = [
