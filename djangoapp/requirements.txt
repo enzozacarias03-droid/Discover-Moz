@@ -7,3 +7,4 @@ django-axes==8.3.1
 cloudinary>=1.36.0
 django-cloudinary-storage>=0.3.0
 whitenoise>=6.6.0
+gunicorn>=21.2.0
